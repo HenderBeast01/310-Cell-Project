@@ -10,6 +10,7 @@ COSC 310 - Group 24
 * [How To Host The Project Locally](#How-To-Host-The-Project-Locally)
 * [File Structure](#File-Structure)
 * [Function Descriptions](#Function-Descriptions)
+* [Assignment 3 Changes](#Assignment-3)
 
 ## About
 
@@ -87,3 +88,39 @@ In **Public > Javascripts**, we have 'ChatBot.js' which includes all the main fu
     * getInitialStatement() - Contains the initial statement once a game of hangman is started.
     * getGuessFromString(str) - This functions extracts the letter guessed by the user from their input.
   * getHangmanResponse(str) - This function makes use of the functions above in order to start the game, and calls the appropriate functions throughout the game.
+
+## Assignment 3 
+  
+**Implemented Features**
+   * Implemented a feature that can handle when the user enters small giberish phrases or letters that do not form words.
+   
+**Feature Descriptions**
+  * GUI - the graphical user interface designed for our system provides a colorful and enjoyable experience to match the light-hearted nature of our chatbot. The GUI allows users to view all previous messages sent and responses from the chatbot as well.
+  * Additional Responses - In the list of understood sentences for the trie data structure there are certain "starter sentences" that will be used if the chatbot doesn't understand the users input. This means that the for most question formats our chatbot will have a response that fits the asked question.
+  * Spell Check - The way the trie data structure works allows for simple spelling errors, what this means is that because the trie structure looks for the strongest correlation of words possible it can handle words with slight errors as the correlation will still be moderately high. 
+
+**Examples of Features**
+
+* **Spell Check**
+
+  ![](https://github.com/Ncookiez/310-Cell-Project/blob/JH/public/images/Spellcheck_Image.png?raw=true)
+  
+* **Additional Responses**
+
+  ![](https://github.com/Ncookiez/310-Cell-Project/blob/JH/public/images/Additional_Responses_Image.png?raw=true)
+  
+**DFD Level 0**
+
+![](https://github.com/Ncookiez/310-Cell-Project/blob/JH/public/images/DFD_Level_0.png?raw=true)
+
+**DFD Level 1**
+
+![](https://github.com/Ncookiez/310-Cell-Project/blob/JH/public/images/DFD_Level_1.png?raw=true)
+  
+**Sample Output**
+
+![](https://github.com/Ncookiez/310-Cell-Project/blob/JH/public/images/Output_1.png?raw=true)
+
+![](https://github.com/Ncookiez/310-Cell-Project/blob/JH/public/images/Output_2.png?raw=true)
+
+![](https://github.com/Ncookiez/310-Cell-Project/blob/JH/public/images/Output_3.png?raw=true)
